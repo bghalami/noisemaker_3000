@@ -1,0 +1,8 @@
+# Ignore all logfiles and tempfiles
+/log/*
+!/log/.keep
+/spec/log/*
+/spec/temp/*
+
+# Ignore coverage report created by simplecov
+/coverage/*
