@@ -1,7 +1,7 @@
 require 'spec_helper'
-require './lib/noisemaker_3000.rb'
-require './lib/file_handler.rb'
-require './lib/network_handler.rb'
+require File.join(".","lib","file_handler.rb")
+require File.join(".","lib","network_handler.rb")
+require File.join(".","lib","noisemaker_3000.rb")
 
 describe Noisemaker3000 do
     subject { described_class.new(command_line: command_line) }
@@ -17,7 +17,7 @@ describe Noisemaker3000 do
         context "action is file modification" do
             let(:options) { { action: action, filepath: filepath } }
             let(:action) { FileHandler::VALID_ACTIONS.sample(1).first }
-            let(:filepath) { "valid/filepath.txt" }
+            let(:filepath) { File.join("valid","filepath.txt") }
             let(:file_handler) { FileHandler.new(options, logger: subject.logger) }
 
             before do
