@@ -51,12 +51,14 @@ Dir.mkdir(dirname) unless File.directory?(dirname)```
 #### 3) There are opportunities to implement shared examples in the specs  
 > More specifically around file manipulation.
 #### 4) Implement a factory system for testing more randomized testing
-#### 5) Look into Linux functionality
-> For some reason, which I couldn't quickly deduce, the log file on Linux is created in the lib directory.
+#### 5) ~~Look into Linux functionality~~
+> ~~For some reason, which I couldn't quickly deduce, the log file on Linux is created in the lib directory.~~
+> This behavior is no longer being observed
 #### 6) Ask more questions
 > Now that I'm at the end of my project I realize I made some assumptions, but feel pressured by time to submit.  
 If I could do it again I would have asked more questions as soon as I ran into them.
 Primarily around the networking portion.
+#### 7) Use a popular API and a more complex network call to test data streaming
 
 
 
