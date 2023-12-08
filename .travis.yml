@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 3.1.1
+
+cache:
+  bundler: true
+
+script:
+  - bundle install
+  - bundle exec rspec
